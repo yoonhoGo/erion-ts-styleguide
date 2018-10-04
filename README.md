@@ -28,7 +28,8 @@ function setClass(oneClass: Class) { /* ... */ }
 function setClass(_class: Class) { /* ... */ }
 ```
 
-- [2.2]() 함수는 동사로 시작해야합니다.
+<a name="functions--verb-naming-rule"></a>
+- [2.2](#functions--verb-naming-rule) 함수는 동사로 시작해야합니다.
 ```typescript
 // bad
 function bookFind() { /* ... */ }
