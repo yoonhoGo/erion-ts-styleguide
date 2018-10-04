@@ -28,7 +28,7 @@ function setClass(oneClass: Class) { /* ... */ }
 function setClass(_class: Class) { /* ... */ }
 ```
 
-함수는 동사로 시작해야합니다.
+- [2.2]() 함수는 동사로 시작해야합니다.
 ```
 // bad
 function bookFind() { /* ... */ }
@@ -70,7 +70,7 @@ class Book {
 }
 ```
 
-`static` 속성은 `class` 제일 위에 존재해야 합니다.
+- [3.3]() `static` 속성은 `class` 제일 위에 존재해야 합니다.
 ```typescript
 // good
 class Book {
