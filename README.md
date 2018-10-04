@@ -28,6 +28,15 @@ function setClass(oneClass: Class) { /* ... */ }
 function setClass(_class: Class) { /* ... */ }
 ```
 
+함수는 동사로 시작해야합니다.
+```
+// bad
+function bookFind() { /* ... */ }
+
+// good
+function findBook() { /* ... */ }
+```
+
 ## 클래스와 생성자
 <a name="classes--private-property-underscore"></a>
 - [3.1](#classes--private-property-underscore) `class`내의 `private` 속성은 `__`로 시작합니다.
@@ -59,4 +68,13 @@ class Book {
   public author
   private __stock
 }
-``` 
+```
+
+`static` 속성은 `class` 제일 위에 존재해야 합니다.
+```typescript
+// good
+class Book {
+  static write(): void
+  public author
+}
+```
