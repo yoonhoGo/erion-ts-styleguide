@@ -71,7 +71,7 @@ class Book {
 ```
 
 <a name="classes--static-property-order"></a>
-- [3.3](#classes-static-property-order) `static` 속성은 `class` 제일 위에 존재해야 합니다.
+- [3.3](#classes--static-property-order) `static` 속성은 `class` 제일 위에 존재해야 합니다.
 ```typescript
 // good
 class Book {
