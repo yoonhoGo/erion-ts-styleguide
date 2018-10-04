@@ -29,7 +29,7 @@ function setClass(_class: Class) { /* ... */ }
 ```
 
 - [2.2]() 함수는 동사로 시작해야합니다.
-```
+```typescript
 // bad
 function bookFind() { /* ... */ }
 
@@ -43,14 +43,14 @@ function findBook() { /* ... */ }
 ```typescript
 // bad
 class Book {
-  public author
-  private stock
+  public author: Author
+  private stock: Stock
 }
 
 // good
 class Book {
-  public author
-  private __stock
+  public author: Author
+  private __stock: Stock
 }
 ```
 
@@ -59,22 +59,25 @@ class Book {
 ```typescript
 // bad
 class Book {
-  private __stock
-  public author
+  private __stock: Stock
+  public author: Author
 }
 
 // good
 class Book {
-  public author
-  private __stock
+  public author: Author
+  private __stock: Stock
 }
 ```
 
+<a name="classes--static-property-order"></a>
 - [3.3]() `static` 속성은 `class` 제일 위에 존재해야 합니다.
 ```typescript
 // good
 class Book {
-  static write(): void
-  public author
+  static public write(): void { /* ... */ }
+
+  private __stock: Stock
+  public author: Author
 }
 ```
