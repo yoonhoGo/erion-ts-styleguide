@@ -7,10 +7,10 @@
 3. [클래스와 생성자](#클래스와-생성자)
 
 ## 변수 이름 명명법
-- 1.1
+- 1.1 변수 이름이 예약어를 포함한다면 `_`를 앞에 붙여줍니다.
 
 ## 함수
-- 2.1 함수 Argument 이름이 예약어를 포함한다면 `_`를 앞에 붙여준다
+- 2.1 함수 Argument 이름이 예약어를 포함한다면 `_`를 앞에 붙여줍니다.
 ```typescript
 // bad
 function setClass(oneClass: Class) { /* ... */ }
@@ -20,7 +20,7 @@ function setClass(_class: Class) { /* ... */ }
 ```
 
 ## 클래스와 생성자
-- 3.1 `class`내의 `private` 속성은 `__`로 시작한다.
+- 3.1 `class`내의 `private` 속성은 `__`로 시작합니다.
 ```typescript
 // bad
 class Book {
@@ -35,7 +35,7 @@ class Book {
 }
 ```
 
-- 3.2 `class`내의 `public` 속성은 반드시 `private` 속성 위에 존재해야 한다.
+- 3.2 `class`내의 `public` 속성은 `private` 속성 위에 존재해야 합니다.
 ```typescript
 // bad
 class Book {
