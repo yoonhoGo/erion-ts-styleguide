@@ -9,6 +9,7 @@
 ## 변수 이름 명명법
 <a name="variable--reserved-word-in-variable"></a>
 - [1.1](#variable--reserved-name) 변수 이름이 예약어를 포함한다면 `_`를 앞에 붙여줍니다.
+> 예약어의 이름으로 변수를 정의해야 하는 경우 _를 통해 이스케이프합니다.
 ```typescript
 // bad
 const oneClass = { /* ... */ }
@@ -30,6 +31,8 @@ function setClass(_class: Class) { /* ... */ }
 
 <a name="functions--verb-naming-rule"></a>
 - [2.2](#functions--verb-naming-rule) 함수는 동사로 시작해야합니다.
+> 1. 함수는 동적인 이미지를 갖고 있습니다.
+> 2. 처리하라는 명령의 이미지를 갖고 있습니다.
 ```typescript
 // bad
 function bookFind() { /* ... */ }
@@ -73,6 +76,7 @@ class Book {
 
 <a name="classes--static-property-order"></a>
 - [3.3](#classes--static-property-order) `static` 속성은 `class` 제일 위에 존재해야 합니다.
+> `static` 속성은 `class`가 `instance`로 생성되지 않아도 사용될 수 있으므로 `instance`가 아닌 `class`에 종속적으로 보기 때문입니다.
 ```typescript
 // good
 class Book {
